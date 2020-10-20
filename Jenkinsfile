@@ -30,7 +30,7 @@ pipeline {
         branch 'master'
       }
       steps {
-        sh 'oc login -u testuser -p redhat123 --insecure-skip-tls-verify https://api.openshift.podX.io:6443'
+        sh 'oc login -u testuser -p redhat123 --insecure-skip-tls-verify https://api.openshift.pod03.io:6443'
         sh 'oc new-project test-testuser || true'
       }
     }
